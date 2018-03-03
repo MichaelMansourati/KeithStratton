@@ -1,0 +1,138 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Raleway-Regular.woff') format('woff'),
+         url('../assets/fonts/Raleway-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Londrina Outline';
+  src: url('../assets/fonts/LondrinaOutline-Regular.woff2') format('woff2'),
+       url('../assets/fonts/LondrinaOutline-Regular.woff') format('woff'),
+       url('../assets/fonts/LondrinaOutline-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rammetto One';
+  src: url('../assets/fonts/RammettoOne-Regular.woff2') format('woff2'),
+       url('../assets/fonts/RammettoOne-Regular.woff') format('woff'),
+       url('../assets/fonts/RammettoOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+}
+
+html, body {
+  font-size: 15px;
+  background-color: #F5DEB3;
+}
+
+#main-container {
+  margin: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+#title {
+  font-size: 100px;
+  font-family: 'Londrina Outline', sans-serif;
+  margin: 0;
+}
+
+#subtitle {
+  font-family: 'Rammetto One', sans-serif;
+  font-size: 21px;
+  margin: 0 auto 70px;
+}
+
+#nav-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+nav {
+  min-width: 240px;
+  margin-right: 20px;
+  font-family: 'Rammetto One', sans-serif;
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1874CD;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content-container {
+  max-width: 800px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.nav-item {
+  margin: 0 0 5px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Rammetto One', sans-serif;
+  margin: 0 0 20px;
+}
+
+h2.works-list-year {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+#works-list {
+  text-align: left;
+}
+
+.works-list-item {
+  margin: 15px 0 0;
+}
+
+audio {
+  padding: 10px;
+}
