@@ -26,6 +26,6 @@ export default ({ children }) =>
       <div className="content-container">
         {children()}
       </div>
-      <div style={{width:'260px'}}></div>
+      <div id="right-content-margin"></div>
     </div>
   </div>
