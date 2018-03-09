@@ -75,3 +75,9 @@
   background: url('../assets/icons/play.png') no-repeat;
 }
 .pause{background: url('../assets/icons/pause.png') no-repeat;}
+
+@media (pointer: coarse) {
+  .volume-container {
+    display: none;
+  }
+}

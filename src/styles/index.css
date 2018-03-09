@@ -35,7 +35,7 @@ html, body {
 }
 
 #main-container {
-  margin: 8px;
+  margin: 0 5px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 20px;
@@ -45,12 +45,14 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 0 auto 30px;
 }
 
 #title {
   font-size: 100px;
   font-weight: 700;
+  line-height: 0.85;
   letter-spacing: 4px;
   font-family: 'Londrina Outline', sans-serif;
   margin: 0;
@@ -62,6 +64,13 @@ html, body {
   font-weight: 100;
   font-size: 22.5px;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.subtitle-subgroup {
+  display: flex;
+  flex-direction: row;
 }
 
 #nav-content-container {
@@ -74,16 +83,14 @@ p {
   text-align: justify;
 }
 
-#right-content-margin {
-  width: 205.88px;
-  margin-left: 20px;
+nav {
+  margin-right: 15px;
+  font-family: 'Rammetto One', sans-serif;
 }
 
-nav {
-  width: 205.88px;
-  min-width: 205.88px;
-  margin-right: 20px;
-  font-family: 'Rammetto One', sans-serif;
+nav, #right-content-margin {
+  width: 180px;
+  min-width: 180px;
 }
 
 ul {
@@ -91,6 +98,10 @@ ul {
   text-align: right;
   padding-left: 0;
   margin: 0;
+}
+
+.row-break + .row-break {
+  margin-top: 15px;
 }
 
 a {
@@ -102,14 +113,23 @@ a:hover {
   text-decoration: underline;
 }
 
+#right-content-margin {
+  margin-left: 15px;
+}
+
 .content-container {
   max-width: 800px;
   width: 100%;
   font-size: 16px;
 }
 
+.nav-item {
+  font-size: 20px;
+  line-height: 0.9
+}
+
 .nav-item + .nav-item {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 h2 {
@@ -145,7 +165,8 @@ audio {
   padding: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
   #nav-content-container {
     flex-direction: column;
     align-items: center;
@@ -154,22 +175,46 @@ audio {
   nav {
     width: 100%;
     min-width: 100%;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
   }
 
-  ul {
+  .row-break {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .row-break + .row-break {
+    margin-top: 0;
+  }
+
+  #nav-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0 5px;
   }
 
   .nav-item {
     min-width: max-content;
-    margin: 0 7px;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 1.75
   }
 
   .nav-item + .nav-item {
     margin-top: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #works-list {
+    text-align: center;
+  }
+
+  #audioplayer {
+    justify-content: center;
   }
 }
