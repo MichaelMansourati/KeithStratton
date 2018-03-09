@@ -12,13 +12,13 @@ export default ({ children }) =>
     <div id="title-container">
       <h1 id="title">Keith Stratton</h1>
       <h3 id="subtitle">
-        <div className="subtitle-subgroup">
-          <div>composer.</div>
-          <div>arranger.</div>
+        <div className="subtitle-row">
+          <div className="subtitle-item" >composer.</div>
+          <div className="subtitle-item" >arranger.</div>
         </div>
-        <div className="subtitle-subgroup">
-          <div>performer.</div>
-          <div>educator.</div>
+        <div className="subtitle-row">
+          <div className="subtitle-item" >performer.</div>
+          <div className="subtitle-item" >educator.</div>
         </div>
       </h3>
     </div>

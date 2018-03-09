@@ -66,11 +66,18 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.subtitle-subgroup {
+.subtitle-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.subtitle-item + .subtitle-item {
+  margin-left: 5px;
 }
 
 #nav-content-container {
@@ -216,5 +223,27 @@ audio {
 
   #audioplayer {
     justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #title {
+    font-size: 70px;
+    padding-left: 2px;
+  }
+
+  #subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  #nav-list {
+    flex-direction: column;
+  }
+
+  .row-break {
+    flex-direction: column;
+    text-align: center;
   }
 }
