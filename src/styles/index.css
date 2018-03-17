@@ -27,17 +27,15 @@
   font-style: normal;
 }
 
-@font-face {
-
-}
-
 html, body {
+  height: 100%;
+  width: 100%;
   font-size: 15px;
   background-color: #F5DEB3;
 }
 
 #main-container {
-  margin: 8px;
+  margin: 0 5px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 20px;
@@ -47,19 +45,32 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  text-align: center;
+  margin: 0 auto 30px;
 }
 
 #title {
   font-size: 100px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: 4px;
   font-family: 'Londrina Outline', sans-serif;
   margin: 0;
+  padding-left: 5px;
 }
 
 #subtitle {
   font-family: 'Rammetto One', sans-serif;
-  font-size: 21px;
-  margin: 0 auto 70px;
+  font-weight: 100;
+  font-size: 22.5px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.subtitle-subgroup {
+  display: flex;
+  flex-direction: row;
 }
 
 #nav-content-container {
@@ -73,9 +84,13 @@ p {
 }
 
 nav {
-  min-width: 240px;
-  margin-right: 20px;
+  margin-right: 15px;
   font-family: 'Rammetto One', sans-serif;
+}
+
+nav, #right-content-margin {
+  width: 180px;
+  min-width: 180px;
 }
 
 ul {
@@ -83,6 +98,10 @@ ul {
   text-align: right;
   padding-left: 0;
   margin: 0;
+}
+
+.row-break + .row-break {
+  margin-top: 15px;
 }
 
 a {
@@ -94,6 +113,10 @@ a:hover {
   text-decoration: underline;
 }
 
+#right-content-margin {
+  margin-left: 15px;
+}
+
 .content-container {
   max-width: 800px;
   width: 100%;
@@ -101,7 +124,12 @@ a:hover {
 }
 
 .nav-item {
-  margin: 0 0 5px;
+  font-size: 20px;
+  line-height: 0.9
+}
+
+.nav-item + .nav-item {
+  margin-top: 15px;
 }
 
 h2 {
@@ -135,4 +163,58 @@ img {
 
 audio {
   padding: 10px;
+}
+
+@media (max-width: 1200px) {
+
+  #nav-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .row-break {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .row-break + .row-break {
+    margin-top: 0;
+  }
+
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .nav-item {
+    min-width: max-content;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 1.75
+  }
+
+  .nav-item + .nav-item {
+    margin-top: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #works-list {
+    text-align: center;
+  }
+
+  #audioplayer {
+    justify-content: center;
+  }
 }

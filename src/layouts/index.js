@@ -11,21 +11,34 @@ export default ({ children }) =>
     </Helmet>
     <div id="title-container">
       <h1 id="title">Keith Stratton</h1>
-      <h3 id="subtitle">composer • arranger • performer • educator</h3>
+      <h3 id="subtitle">
+        <div className="subtitle-subgroup">
+          <div>composer.</div>
+          <div>arranger.</div>
+        </div>
+        <div className="subtitle-subgroup">
+          <div>performer.</div>
+          <div>educator.</div>
+        </div>
+      </h3>
     </div>
     <div id="nav-content-container">
       <nav>
-        <ul>
-          <li className="nav-item"><Link to="/">home</Link></li>
-          <li className="nav-item"><Link to="/biography/">biography</Link></li>
-          <li className="nav-item"><Link to="/list_of_works/">list of works</Link></li>
-          <li className="nav-item"><Link to="/news_and_events/">news and events</Link></li>
-          <li className="nav-item"><Link to="/contact/">contact</Link></li>
+        <ul id="nav-list">
+          <div className="row-break">
+            <li className="nav-item"><Link to="/">home</Link></li>
+            <li className="nav-item"><Link to="/biography/">biography</Link></li>
+            <li className="nav-item"><Link to="/list_of_works/">list of works</Link></li>
+          </div>
+          <div className="row-break">
+            <li className="nav-item"><Link to="/news_and_events/">news and events</Link></li>
+            <li className="nav-item"><Link to="/contact/">contact</Link></li>
+          </div>
         </ul>
       </nav>
       <div className="content-container">
         {children()}
       </div>
-      <div style={{width:'260px'}}></div>
+      <div id="right-content-margin"></div>
     </div>
   </div>
