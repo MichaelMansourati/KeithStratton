@@ -35,7 +35,7 @@ html, body {
 }
 
 #main-container {
-  margin: 0 5px;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 20px;
@@ -56,13 +56,13 @@ html, body {
   letter-spacing: 4px;
   font-family: 'Londrina Outline', sans-serif;
   margin: 0;
-  padding-left: 5px;
+  padding-left: 2px;
 }
 
 #subtitle {
   font-family: 'Rammetto One', sans-serif;
   font-weight: 100;
-  font-size: 22.5px;
+  font-size: 24px;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -76,10 +76,10 @@ html, body {
   margin: auto;
 }
 
-.subtitle-item + .subtitle-item {
+/*.subtitle-item + .subtitle-item {
   margin-left: 5px;
 }
-
+*/
 #nav-content-container {
   display: flex;
   flex-direction: row;
@@ -90,6 +90,11 @@ p {
   text-align: justify;
 }
 
+span {
+  display: block;
+  margin: 0 5px;
+}
+
 nav {
   margin-right: 15px;
   font-family: 'Rammetto One', sans-serif;
@@ -98,6 +103,10 @@ nav {
 nav, #right-content-margin {
   width: 180px;
   min-width: 180px;
+}
+
+#nav-list-mobile {
+  display: none;
 }
 
 ul {
@@ -154,6 +163,7 @@ h2.works-list-year {
 
 h3 {
   margin: 0;
+  font-style: italic;
 }
 
 img {
@@ -168,11 +178,19 @@ img {
   margin: 15px 0 0;
 }
 
-audio {
-  padding: 10px;
+#audioplayer {
+  margin: 6px -2px;
+}
+
+#contact-link {
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
+  #title-container {
+    margin: 0 auto 10px;
+  }
 
   #nav-content-container {
     flex-direction: column;
@@ -217,7 +235,15 @@ audio {
     text-align: center;
   }
 
+  p {
+    margin: 20px 10px;
+  }
+
   #works-list {
+    text-align: center;
+  }
+
+  span {
     text-align: center;
   }
 
@@ -228,8 +254,8 @@ audio {
 
 @media (max-width: 650px) {
   #title {
-    font-size: 70px;
-    padding-left: 2px;
+    font-size: 69px;
+    padding-left: 4px;
   }
 
   #subtitle {
@@ -237,13 +263,39 @@ audio {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
+  #main-container {
+    margin: 0;
+  }
+
+  #title {
+    font-size: 45px;
+  }
+
+  #subtitle {
+    font-size: 12px;
+  }
+
   #nav-list {
+    display: none;
+  }
+
+  #nav-list-mobile {
+    display: flex;
     flex-direction: column;
   }
 
   .row-break {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+  }
+
+  #index-container {
+    overflow: hidden;
+  }
+
+  img {
+    width: 270%;
+    margin-left: -100%;
   }
 }

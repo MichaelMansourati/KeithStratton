@@ -6,7 +6,7 @@ import '../styles/index.css'
 const Contact = () => (
   <div>
     <h2>Contact</h2>
-    <a className="contact-link" href="mailto: mail@keithstratton.com" >mail@keithstratton.com</a>
+    <a id="contact-link" href="mailto: mail@keithstratton.com" >mail@keithstratton.com</a>
   </div>
 )
 
