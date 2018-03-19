@@ -13,11 +13,11 @@ export default ({ children }) =>
       <h1 id="title">Keith Stratton</h1>
       <h3 id="subtitle">
         <div className="subtitle-row">
-          <div className="subtitle-item" >composer.</div>
-          <div className="subtitle-item" >arranger.</div>
+          <div className="subtitle-item" >composer. </div>
+          <div className="subtitle-item" >arranger. </div>
         </div>
         <div className="subtitle-row">
-          <div className="subtitle-item" >performer.</div>
+          <div className="subtitle-item" >performer. </div>
           <div className="subtitle-item" >educator.</div>
         </div>
       </h3>
@@ -32,6 +32,19 @@ export default ({ children }) =>
           </div>
           <div className="row-break">
             <li className="nav-item"><Link to="/news_and_events/">news and events</Link></li>
+            <li className="nav-item"><Link to="/contact/">contact</Link></li>
+          </div>
+        </ul>
+        <ul id="nav-list-mobile">
+          <div className="row-break">
+            <li className="nav-item"><Link to="/">home</Link></li>
+            <li className="nav-item"><Link to="/biography/">biography</Link></li>
+          </div>
+          <div className="row-break">
+            <li className="nav-item"><Link to="/news_and_events/">news and events</Link></li>
+          </div>
+          <div className="row-break">
+            <li className="nav-item"><Link to="/list_of_works/">list of works</Link></li>
             <li className="nav-item"><Link to="/contact/">contact</Link></li>
           </div>
         </ul>

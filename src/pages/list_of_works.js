@@ -18,16 +18,16 @@ function WorksList(props) {
       }
       <h3>{work.title}</h3>
       {work.recording.length > 0 &&
-        <span>{work.recording}<br /></span>
+        <span>{work.recording}</span>
       }
       {work.context.length > 0 &&
-        <span>{work.context}<br /></span>
+        <span>{work.context}</span>
       }
-      <span>{work.ensemble}</span><br />
+      <span>{work.ensemble}</span>
       {work.programNotes.length > 0 &&
-        <span>{work.programNotes}<br /></span>
+        <span>{work.programNotes}</span>
       }
-      <span>{work.duration}'</span><br />
+      <span>{work.duration}'</span>
       {work.audio &&
       <span>
         <AudioPlayer audio={work.audio} />
