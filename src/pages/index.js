@@ -6,7 +6,7 @@ import '../styles/index.css'
 import KeithCagibi from '../assets/images/KeithCagibi.jpg'
 
 const IndexPage = () => (
-  <div id="index-container">
+  <div id="index-container" className="content-container" >
     <img src={KeithCagibi} alt="Keith at Le Cagibi"/>
   </div>
 )
