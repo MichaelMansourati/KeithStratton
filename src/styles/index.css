@@ -290,10 +290,12 @@ img {
   #index-container {
     margin: 0;
     overflow: hidden;
+    max-width: 100%;
   }
 
   img {
     width: 270%;
     margin-left: -89%;
+    margin-top: -20%;
   }
 }
