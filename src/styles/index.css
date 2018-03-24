@@ -92,7 +92,6 @@ p {
 
 span {
   display: block;
-  margin: 0 5px;
 }
 
 nav {
@@ -247,6 +246,12 @@ img {
   #audioplayer {
     justify-content: center;
   }
+
+  .event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 650px) {
@@ -290,10 +295,12 @@ img {
   #index-container {
     margin: 0;
     overflow: hidden;
+    max-width: 100%;
   }
 
   img {
     width: 270%;
     margin-left: -89%;
+    margin-top: -20%;
   }
 }
