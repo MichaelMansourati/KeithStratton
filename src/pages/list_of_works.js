@@ -42,7 +42,7 @@ function WorksList(props) {
 }
 
 const List_of_works = () => (
-  <div>
+  <div className="content-container">
     <h2>List of Works</h2>
     <WorksList worksArr={worksArr} />
   </div>

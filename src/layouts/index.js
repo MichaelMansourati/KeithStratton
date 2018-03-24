@@ -49,9 +49,7 @@ export default ({ children }) =>
           </div>
         </ul>
       </nav>
-      <div className="content-container">
-        {children()}
-      </div>
+      {children()}
       <div id="right-content-margin"></div>
     </div>
   </div>

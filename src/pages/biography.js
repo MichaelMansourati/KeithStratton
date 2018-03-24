@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import '../styles/index.css'
 
 const Biography = () => (
-  <div>
+  <div className="content-container">
     <h2 className="tab-title">Biography</h2>
     <p>
       Keith Stratton is a Canadian composer and percussionist currently based in Montréal, Québec. Hailing from Charlottetown, Prince Edward Island, he completed his Bachelor of Music degree at Acadia University in 2016, where he did a double stream in composition and percussion performance. He is currently completing his Master’s degree at McGill University, where he studies with Jean Lesage and is currently composer-in-residence with the percussion ensemble.

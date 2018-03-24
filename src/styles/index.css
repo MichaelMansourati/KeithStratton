@@ -134,8 +134,9 @@ a:hover {
 }
 
 .content-container {
-  max-width: 800px;
-  width: 100%;
+  width: 800px;
+  max-width: calc(100% - 20px);
+  margin: 0 10px;
   font-size: 16px;
 }
 
@@ -154,7 +155,7 @@ h2 {
   margin: 0 0 20px;
 }
 
-h2.works-list-year {
+h2.works-list-year, .event-date {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -235,10 +236,6 @@ img {
     text-align: center;
   }
 
-  p {
-    margin: 20px 10px;
-  }
-
   #works-list {
     text-align: center;
   }
@@ -291,11 +288,12 @@ img {
   }
 
   #index-container {
+    margin: 0;
     overflow: hidden;
   }
 
   img {
     width: 270%;
-    margin-left: -100%;
+    margin-left: -89%;
   }
 }
