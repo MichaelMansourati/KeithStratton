@@ -298,6 +298,10 @@ img {
     max-width: 100%;
   }
 
+  h3 {
+    text-align: center;
+  }
+
   img {
     width: 270%;
     margin-left: -89%;
