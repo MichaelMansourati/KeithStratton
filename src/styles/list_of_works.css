@@ -1,0 +1,31 @@
+h2.works-list-year {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+#works-list {
+  text-align: left;
+}
+
+.works-list-item {
+  margin: 15px 0 0;
+}
+
+#audioplayer {
+  margin: 6px -2px;
+}
+
+@media (max-width: 1200px) {
+
+  #works-list {
+    text-align: center;
+  }
+
+  #audioplayer {
+    justify-content: center;
+  }
+
+
+}

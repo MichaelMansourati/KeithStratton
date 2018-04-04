@@ -4,6 +4,7 @@ import corpus from '../assets/corpus.js'
 import AudioPlayer from '../components/AudioPlayer.js'
 
 import '../styles/index.css'
+import '../styles/list_of_works.css'
 
 
 const worksArr = corpus.works

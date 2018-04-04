@@ -154,7 +154,7 @@ h2 {
   margin: 0 0 20px;
 }
 
-h2.works-list-year, .event-date {
+.event-date {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -168,18 +168,6 @@ h3 {
 
 img {
   width: 100%;
-}
-
-#works-list {
-  text-align: left;
-}
-
-.works-list-item {
-  margin: 15px 0 0;
-}
-
-#audioplayer {
-  margin: 6px -2px;
 }
 
 #contact-link {
@@ -235,16 +223,8 @@ img {
     text-align: center;
   }
 
-  #works-list {
-    text-align: center;
-  }
-
   span {
     text-align: center;
-  }
-
-  #audioplayer {
-    justify-content: center;
   }
 
   .event-item {
