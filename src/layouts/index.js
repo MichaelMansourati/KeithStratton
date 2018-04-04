@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import '../styles/index.css'
+import '../styles/nav.css'
+import '../styles/title-container.css'
 
 export default ({ children }) =>
   <div id="main-container">

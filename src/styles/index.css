@@ -41,45 +41,6 @@ html, body {
   font-size: 20px;
 }
 
-#title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto 30px;
-}
-
-#title {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 0.85;
-  letter-spacing: 4px;
-  font-family: 'Londrina Outline', sans-serif;
-  margin: 0;
-  padding-left: 2px;
-}
-
-#subtitle {
-  font-family: 'Rammetto One', sans-serif;
-  font-weight: 100;
-  font-size: 24px;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.subtitle-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-}
-
-/*.subtitle-item + .subtitle-item {
-  margin-left: 5px;
-}
-*/
 #nav-content-container {
   display: flex;
   flex-direction: row;
@@ -94,18 +55,11 @@ span {
   display: block;
 }
 
-nav {
-  margin-right: 15px;
-  font-family: 'Rammetto One', sans-serif;
-}
-
-nav, #right-content-margin {
+#right-content-margin {
+  margin-left: 15px;
+  /* the following styles should also be true for nav */
   width: 180px;
   min-width: 180px;
-}
-
-#nav-list-mobile {
-  display: none;
 }
 
 ul {
@@ -113,10 +67,6 @@ ul {
   text-align: right;
   padding-left: 0;
   margin: 0;
-}
-
-.row-break + .row-break {
-  margin-top: 15px;
 }
 
 a {
@@ -128,24 +78,11 @@ a:hover {
   text-decoration: underline;
 }
 
-#right-content-margin {
-  margin-left: 15px;
-}
-
 .content-container {
   width: 800px;
   max-width: calc(100% - 20px);
   margin: 0 10px;
   font-size: 16px;
-}
-
-.nav-item {
-  font-size: 20px;
-  line-height: 0.9
-}
-
-.nav-item + .nav-item {
-  margin-top: 15px;
 }
 
 h2 {
@@ -188,47 +125,9 @@ img {
 }
 
 @media (max-width: 1200px) {
-  #title-container {
-    margin: 0 auto 10px;
-  }
-
   #nav-content-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav {
-    width: 100%;
-    min-width: 100%;
-    margin: 0 0 10px 0;
-  }
-
-  .row-break {
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  .row-break + .row-break {
-    margin-top: 0;
-  }
-
-  #nav-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 5px;
-  }
-
-  .nav-item {
-    min-width: max-content;
-    margin: 0 10px;
-    font-size: 20px;
-    line-height: 1.75
-  }
-
-  .nav-item + .nav-item {
-    margin-top: 0;
   }
 
   h2 {
@@ -254,42 +153,9 @@ img {
   }
 }
 
-@media (max-width: 650px) {
-  #title {
-    font-size: 69px;
-    padding-left: 4px;
-  }
-
-  #subtitle {
-    font-size: 17px;
-  }
-}
-
 @media (max-width: 450px) {
   #main-container {
     margin: 0;
-  }
-
-  #title {
-    font-size: 45px;
-  }
-
-  #subtitle {
-    font-size: 12px;
-  }
-
-  #nav-list {
-    display: none;
-  }
-
-  #nav-list-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .row-break {
-    flex-direction: row;
-    text-align: center;
   }
 
   #index-container {
