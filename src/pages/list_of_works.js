@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import corpus from '../assets/corpus.js'
 import AudioPlayer from '../components/AudioPlayer.js'
 
+import KeithCagibiBW from '../assets/images/KeithCagibiBW.jpg'
+
 import '../styles/index.css'
 import '../styles/list_of_works.css'
 
@@ -44,6 +46,7 @@ function WorksList(props) {
 
 const List_of_works = () => (
   <div className="content-container">
+    <img src={KeithCagibiBW} />
     <h2>List of Works</h2>
     <WorksList worksArr={worksArr} />
   </div>
