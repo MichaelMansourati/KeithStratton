@@ -1,14 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import '../styles/index.css'
 
 import KeithCagibi from '../assets/images/KeithCagibi.jpg'
 
-const IndexPage = () => (
-  <div id="index-container" className="content-container" >
-    <img src={KeithCagibi} alt="Keith at Le Cagibi"/>
+export default ({ data }) => (
+  <div id="index-container" className="content-container">
+    <Img sizes={data.file.childImageSharp.sizes} alt="Keith at Le Cagibi" />
   </div>
 )
 
-export default IndexPage
+export const query = graphql`
+  query IndexImageQuery {
+    file(relativePath: { eq: "KeithCagibi.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 2000) {
+          ...GatsbyImageSharpSizes_noBase64
+        }
+      }
+    }
+  }
+`

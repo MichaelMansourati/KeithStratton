@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import corpus from '../assets/corpus.js'
 import AudioPlayer from '../components/AudioPlayer.js'
+import Img from 'gatsby-image'
 
 import KeithCagibiBW from '../assets/images/KeithCagibiBW.jpg'
 
@@ -44,12 +45,22 @@ function WorksList(props) {
   );
 }
 
-const List_of_works = () => (
+export default ({ data }) => (
   <div className="content-container">
-    <img src={KeithCagibiBW} />
+    <Img sizes={data.file.childImageSharp.sizes} />
     <h2>List of Works</h2>
     <WorksList worksArr={worksArr} />
   </div>
 )
 
-export default List_of_works
+export const query = graphql`
+  query WorksImageQuery {
+    file(relativePath: { eq: "KeithCagibiBW.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 2000) {
+          ...GatsbyImageSharpSizes_noBase64
+        }
+      }
+    }
+  }
+`
