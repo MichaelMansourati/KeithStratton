@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import '../styles/index.css'
 
-const Biography = () => (
+export default ({ data }) => (
   <div className="content-container">
+    <Img sizes={data.file.childImageSharp.sizes} />
     <h2 className="tab-title">Biography</h2>
     <p>
       Keith Stratton is a Canadian composer and percussionist currently based in Montréal, Québec. Hailing from Charlottetown, Prince Edward Island, he completed his Bachelor of Music degree at Acadia University in 2016, where he did a double stream in composition and percussion performance. He is currently completing his Master’s degree at McGill University, where he studies with Jean Lesage and is currently composer-in-residence with the percussion ensemble.
@@ -21,4 +23,14 @@ const Biography = () => (
   </div>
 )
 
-export default Biography
+export const query = graphql`
+  query BioImageQuery {
+    file(relativePath: { eq: "Portrait.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 2000) {
+          ...GatsbyImageSharpSizes_noBase64
+        }
+      }
+    }
+  }
+`
