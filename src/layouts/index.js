@@ -8,8 +8,9 @@ import '../styles/title-container.css'
 
 export default ({ children }) =>
   <div id="main-container">
+    <div>
     <Helmet>
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
     </Helmet>
     <div id="title-container">
       <h1 id="title">Keith Stratton</h1>
@@ -54,4 +55,6 @@ export default ({ children }) =>
       {children()}
       <div id="right-content-margin"></div>
     </div>
+    </div>
+    <div id="footer">All photos by Francis Leduc-Bélanger. Design by Michael Mansourati. All rights reserved, © Keith Stratton 2018</div>
   </div>
