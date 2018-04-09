@@ -7,6 +7,7 @@ import fiveMiniatures from "./audio/fiveMiniatures.mp3"
 import orchard from "./audio/orchard.mp3"
 import porcupine from "./audio/porcupine.mp3"
 import thisEmptyHouseIsOurBlankCanvas from "./audio/thisEmptyHouseIsOurBlankCanvas.mp3"
+import lullaby1 from "./audio/lullaby1.mp3"
 
 module.exports =
 {
@@ -89,7 +90,8 @@ module.exports =
     duration: 3,
     recording: "",
     programNotes: "",
-    year: 2016
+    year: 2016,
+    audio: lullaby1
   },
   {
     title: "Kandinsky in Madras",
