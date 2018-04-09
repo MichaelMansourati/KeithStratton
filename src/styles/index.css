@@ -34,17 +34,26 @@ html, body {
   background-color: #F5DEB3;
 }
 
+#___gatsby {
+  height: 100%;
+}
+
 #main-container {
+  height: 100%;
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #nav-content-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 p {
@@ -80,7 +89,7 @@ a:hover {
 
 .content-container {
   width: 800px;
-  max-width: calc(100% - 20px);
+  max-width: 100%;
   margin: 0 10px;
   font-size: 16px;
 }
@@ -89,6 +98,11 @@ h2 {
   font-size: 30px;
   font-family: 'Rammetto One', sans-serif;
   margin: 10px 0 20px;
+}
+
+.text-area {
+  max-width: calc(100% - 20px);
+  margin: 0 10px;
 }
 
 .event-date {
@@ -110,6 +124,13 @@ img {
 #contact-link {
   display: block;
   text-align: center;
+}
+
+#footer {
+  text-align: center;
+  padding: 0 5px 2px;
+  font-size: 12px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 1200px) {

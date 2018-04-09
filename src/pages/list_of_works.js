@@ -1,12 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import corpus from '../assets/corpus.js'
 import AudioPlayer from '../components/AudioPlayer.js'
 import Img from 'gatsby-image'
 
-import KeithCagibiBW from '../assets/images/KeithCagibiBW.jpg'
-
-import '../styles/index.css'
 import '../styles/list_of_works.css'
 
 
@@ -48,8 +44,10 @@ function WorksList(props) {
 export default ({ data }) => (
   <div className="content-container">
     <Img sizes={data.file.childImageSharp.sizes} />
-    <h2>List of Works</h2>
-    <WorksList worksArr={worksArr} />
+    <div className="text-area">
+      <h2>List of Works</h2>
+      <WorksList worksArr={worksArr} />
+    </div>
   </div>
 )
 
