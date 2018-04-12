@@ -1,15 +1,6 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
-         url('../assets/fonts/Raleway-Regular.woff') format('woff'),
-         url('../assets/fonts/Raleway-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'Londrina Outline';
   src: url('../assets/fonts/LondrinaOutline-Regular.woff2') format('woff2'),
        url('../assets/fonts/LondrinaOutline-Regular.woff') format('woff'),
@@ -19,17 +10,38 @@
 }
 
 @font-face {
-  font-family: 'Rammetto One';
-  src: url('../assets/fonts/RammettoOne-Regular.woff2') format('woff2'),
-       url('../assets/fonts/RammettoOne-Regular.woff') format('woff'),
-       url('../assets/fonts/RammettoOne-Regular.ttf') format('ttf');
+  font-family: 'Spectral Regular';
+  src: url('../assets/fonts/Spectral-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-Regular.woff') format('woff'),
+       url('../assets/fonts/Spectral-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Spectral Italic';
+  src: url('../assets/fonts/Spectral-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-Italic.woff') format('woff'),
+       url('../assets/fonts/Spectral-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Spectral Extra Bold';
+  src: url('../assets/fonts/Spectral-ExtraBold.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-ExtraBold.woff') format('woff'),
+       url('../assets/fonts/Spectral-ExtraBold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  width: 100vw;
+}
+
 html, body {
   height: 100%;
-  width: 100%;
   font-size: 15px;
   background-color: #F5DEB3;
 }
@@ -41,7 +53,7 @@ html, body {
 #main-container {
   height: 100%;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Spectral Regular', sans-serif;
   font-weight: 100;
   font-size: 20px;
   display: flex;
@@ -96,8 +108,9 @@ a:hover {
 
 h2 {
   font-size: 30px;
-  font-family: 'Rammetto One', sans-serif;
-  margin: 10px 0 20px;
+  font-family: 'Spectral Bold', sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .text-area {
