@@ -69,11 +69,14 @@ html, body {
   justify-content: space-between;
 }
 
+#inner-main-container {
+  margin-bottom: 30px;
+}
+
 #nav-content-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 p {
@@ -177,6 +180,10 @@ img {
   }
 
   h3 {
+    text-align: center;
+  }
+
+  h4 {
     text-align: center;
   }
 
