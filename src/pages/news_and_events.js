@@ -9,8 +9,8 @@ export default ({ data }) => (
     <div className="text-area">
       <h2>News and Events</h2>
       <div className="event-item">
-        <h2 className="event-date">April 5th, 2018</h2>
-        <h3>premiere of Pop Cycle for percussion quartet</h3>
+        <h3 className="event-date">April 5th, 2018</h3>
+        <h4>Premiere of Pop Cycle for percussion quartet</h4>
         <span>McGill Percussion Ensemble concert</span>
         <span>Pollack Hall, McGill University</span>
         <span>
