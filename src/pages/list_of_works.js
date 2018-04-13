@@ -14,9 +14,9 @@ function WorksList(props) {
   const listWorks = worksArr.map((work) =>
     <li key={work.title.toString()}  className="works-list-item">
       {work.shouldPrintYear &&
-      <h2 className="works-list-year">{work.year}</h2>
+      <h3 className="works-list-year">{work.year}</h3>
       }
-      <h3>{work.title}</h3>
+      <h4>{work.title}</h4>
       {work.recording.length > 0 &&
         <span>{work.recording}</span>
       }

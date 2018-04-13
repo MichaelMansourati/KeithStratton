@@ -1,15 +1,6 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
-         url('../assets/fonts/Raleway-Regular.woff') format('woff'),
-         url('../assets/fonts/Raleway-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'Londrina Outline';
   src: url('../assets/fonts/LondrinaOutline-Regular.woff2') format('woff2'),
        url('../assets/fonts/LondrinaOutline-Regular.woff') format('woff'),
@@ -19,17 +10,46 @@
 }
 
 @font-face {
-  font-family: 'Rammetto One';
-  src: url('../assets/fonts/RammettoOne-Regular.woff2') format('woff2'),
-       url('../assets/fonts/RammettoOne-Regular.woff') format('woff'),
-       url('../assets/fonts/RammettoOne-Regular.ttf') format('ttf');
+  font-family: 'Spectral Regular';
+  src: url('../assets/fonts/Spectral-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-Regular.woff') format('woff'),
+       url('../assets/fonts/Spectral-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Spectral Italic';
+  src: url('../assets/fonts/Spectral-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-Italic.woff') format('woff'),
+       url('../assets/fonts/Spectral-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Spectral Extra Bold';
+  src: url('../assets/fonts/Spectral-ExtraBold.woff2') format('woff2'),
+       url('../assets/fonts/Spectral-ExtraBold.woff') format('woff'),
+       url('../assets/fonts/Spectral-ExtraBold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html, body {
-  height: 100%;
   width: 100%;
+  height: 100%;
   font-size: 15px;
   background-color: #F5DEB3;
 }
@@ -41,7 +61,7 @@ html, body {
 #main-container {
   height: 100%;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Spectral Regular', sans-serif;
   font-weight: 100;
   font-size: 20px;
   display: flex;
@@ -95,9 +115,11 @@ a:hover {
 }
 
 h2 {
-  font-size: 30px;
-  font-family: 'Rammetto One', sans-serif;
-  margin: 10px 0 20px;
+  font-size: 40px;
+  margin: 20px 0 0;
+  font-family: 'Spectral Extra Bold', sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .text-area {
@@ -105,14 +127,25 @@ h2 {
   margin: 0 10px;
 }
 
+.event-item {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
 .event-date {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
   margin: 0;
   padding: 20px 0 0;
 }
 
 h3 {
+  font-family: 'Spectral Extra Bold';
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
   margin: 0;
   font-style: italic;
 }
@@ -143,6 +176,10 @@ img {
     text-align: center;
   }
 
+  h3 {
+    text-align: center;
+  }
+
   span {
     text-align: center;
   }
@@ -152,6 +189,8 @@ img {
     flex-direction: column;
     align-items: center;
   }
+
+
 }
 
 @media (max-width: 450px) {
@@ -163,9 +202,5 @@ img {
     margin: 0;
     overflow: hidden;
     max-width: 100%;
-  }
-
-  h3 {
-    text-align: center;
   }
 }
