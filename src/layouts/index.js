@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import favicon from "../assets/icons/favicon.ico"
+
 import '../styles/index.css'
 import '../styles/nav.css'
 import '../styles/title-container.css'
@@ -11,6 +13,7 @@ export default ({ children }) =>
     <div id="inner-main-container">
     <Helmet>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
+      <link rel="icon" href={favicon} type="image/x-icon" />
     </Helmet>
     <div id="title-container">
       <h1 id="title">Keith Stratton</h1>
@@ -56,5 +59,5 @@ export default ({ children }) =>
       <div id="right-content-margin"></div>
     </div>
     </div>
-    <div id="footer">All photos by Francis Leduc-Bélanger. Design by Michael Mansourati. All rights reserved, © Keith Stratton 2018</div>
+    <div id="footer"><span id="footer-text">All photos by Francis Leduc-Bélanger. Design by Michael Mansourati. All rights reserved, © Keith Stratton 2018</span></div>
   </div>

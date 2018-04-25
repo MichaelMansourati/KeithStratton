@@ -19,15 +19,6 @@
 }
 
 @font-face {
-  font-family: 'Spectral Italic';
-  src: url('../assets/fonts/Spectral-Italic.woff2') format('woff2'),
-       url('../assets/fonts/Spectral-Italic.woff') format('woff'),
-       url('../assets/fonts/Spectral-Italic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Spectral Extra Bold';
   src: url('../assets/fonts/Spectral-ExtraBold.woff2') format('woff2'),
        url('../assets/fonts/Spectral-ExtraBold.woff') format('woff'),
@@ -39,6 +30,7 @@
 html {
   overflow-y: scroll;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -49,13 +41,13 @@ html {
 
 html, body {
   width: 100%;
-  height: 100%;
   font-size: 15px;
   background-color: #F5DEB3;
 }
 
-#___gatsby {
+body, #___gatsby {
   height: 100%;
+  min-height: 100%;
 }
 
 #main-container {
@@ -64,13 +56,10 @@ html, body {
   font-family: 'Spectral Regular', sans-serif;
   font-weight: 100;
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 #inner-main-container {
-  margin-bottom: 30px;
+  min-height: calc(100% - 40px);
 }
 
 #nav-content-container {
@@ -119,15 +108,15 @@ a:hover {
 
 h2 {
   font-size: 40px;
-  margin: 20px 0 0;
+  margin: 20px 0;
   font-family: 'Spectral Extra Bold', sans-serif;
   width: 100%;
   text-align: center;
 }
 
 .text-area {
-  max-width: calc(100% - 20px);
-  margin: 0 10px;
+  max-width: calc(100vw - 20px);
+  margin: auto;
 }
 
 .event-item {
@@ -138,13 +127,12 @@ h2 {
 .event-date {
   font-size: 25px;
   margin: 0;
-  padding: 20px 0 0;
 }
 
 h3 {
   font-family: 'Spectral Extra Bold';
   font-size: 25px;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -163,20 +151,23 @@ img {
 }
 
 #footer {
+  position: relative;
+  height: 40px;
+}
+
+#footer-text {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2px;
+  width: 100%;
   text-align: center;
-  padding: 0 5px 2px;
-  font-size: 12px;
-  flex-shrink: 0;
+  font-size: 13px;
 }
 
 @media (max-width: 1200px) {
   #nav-content-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   h3 {

@@ -1,5 +1,5 @@
 import afterTheYearOfGlad from "./audio/afterTheYearOfGlad.mp3"
-import ammophiliaBreviligulata from "./audio/ammophiliaBreviligulata.mp3"
+import ammophilaBreviligulata from "./audio/ammophilaBreviligulata.mp3"
 import anchor from "./audio/anchor.mp3"
 import duel from "./audio/duel.mp3"
 import empathyManoeuvre1 from "./audio/empathyManoeuvre1.mp3"
@@ -86,7 +86,7 @@ module.exports =
   {
     title: "Lullaby No. 1",
     context: "",
-    ensemble: "harp, cello and vibraphones",
+    ensemble: "harp, cello and vibraphone",
     duration: 3,
     recording: "",
     programNotes: "",
@@ -124,7 +124,7 @@ module.exports =
     audio: thisEmptyHouseIsOurBlankCanvas
   },
   {
-    title: "Ammophilia Breviligulata",
+    title: "Ammophila Breviligulata",
     context: "composed for a workshop with the Ensemble Intercontemporain de Montréal (ECM+); premiered by the McGill Association of Student Composers (2016)",
     ensemble: "flute, clarinet, violin, cello and piano",
     duration: 4,
@@ -132,7 +132,7 @@ module.exports =
     programNotes: "",
     year: 2014,
     shouldPrintYear: true,
-    audio: ammophiliaBreviligulata
+    audio: ammophilaBreviligulata
   },
   {
     title: "Porcupine",
