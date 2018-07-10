@@ -5,40 +5,29 @@ import Img from 'gatsby-image'
 
 import '../styles/list_of_works.css'
 
-
 const worksArr = corpus.works
 
-
 function WorksList(props) {
-  const worksArr = props.worksArr;
-  const listWorks = worksArr.map((work) =>
-    <li key={work.title.toString()}  className="works-list-item">
-      {work.shouldPrintYear &&
-      <h3 className="works-list-year">{work.year}</h3>
-      }
+  console.log(props);
+  const worksArr = props.worksArr
+  console.log(worksArr);
+  const listWorks = worksArr.map(work => (
+    <li key={work.title.toString()} className="works-list-item">
+      {work.shouldPrintYear && <h3 className="works-list-year">{work.year}</h3>}
       <h4>{work.title}</h4>
-      {work.recording.length > 0 &&
-        <span>{work.recording}</span>
-      }
-      {work.context.length > 0 &&
-        <span>{work.context}</span>
-      }
+      {work.context.length > 0 && <span>{work.context}</span>}
       <span>{work.ensemble}</span>
-      {work.programNotes.length > 0 &&
-        <span>{work.programNotes}</span>
-      }
+      {work.programNotes.length > 0 && <span>{work.programNotes}</span>}
       <span>{work.duration}'</span>
-      {work.audio &&
-      <span>
-        <AudioPlayer audio={work.audio} />
-        <br />
-      </span>
-      }
+      {work.audio && (
+        <span>
+          <AudioPlayer audio={work.audio} />
+          <br />
+        </span>
+      )}
     </li>
-  );
-  return (
-    <ul id="works-list">{listWorks}</ul>
-  );
+  ))
+  return <ul id="works-list">{listWorks}</ul>
 }
 
 export default ({ data }) => (
