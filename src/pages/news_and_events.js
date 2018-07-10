@@ -14,7 +14,11 @@ export default ({ data }) => (
         <span>Ensemble AKA + Ear Camera</span>
         <span>La Vitrola</span>
         <span>4602 Boul St-Laurent, Montréal QC</span>
-        <span><a href="https://www.facebook.com/events/228528297694223/">facebook</a></span>
+        <span>
+          <a href="https://www.facebook.com/events/228528297694223/">
+            facebook
+          </a>
+        </span>
       </div>
       <div className="event-item">
         <h3 className="event-date">April 5th, 2018</h3>
