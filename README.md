@@ -1,13 +1,8 @@
-# gatsby-starter-default
-The default Gatsby starter
+# [http://www.keithstratton.com](keithstratton.com)
+keithstratton.com is a portfolio site built for a musician and friend of mine, Keith Stratton. I used the GatsbyJS static site generator, which is built on ReactJS. One of the features of the site is a React component I built that acts a wrapper for the HTML5 web audio API. It is a heavily customized and extended version of the component in [this tutorial](http://nael.io/2017-03-11-building-a-react-audio-player/).
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Preview
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+[!Homepage](./docs/KS1Home.png)
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[!List of works](./docs/KS2LoW.png)
